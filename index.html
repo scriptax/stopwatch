@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Stopwatch Applet</title>
+        <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" 
+        />
+        <link rel="stylesheet" href="stopwatch.css">
+        <script src="stopwatch.js"></script>
+    </head>
+    <body onload="loadElems()">
+        <div id="SW">
+
+            <div id="disp">
+                <div id="digits">
+                    <span id="hr">00:</span><span id="min">00:</span><span id="sec">00.</span><span id="msec">00</span>
+                </div>
+                <div id="captions">
+                    <span>hr</span><span>min</span><span>sec</span>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <div onclick="toggleTimer()" title="Toggle">
+                    <span class="material-symbols-outlined">play_arrow</span>
+                </div>
+                <div onclick="recordData()" title="Laps / Split">
+                    <span class="material-symbols-outlined">flag</span>
+                </div>
+                <div onclick="resetTimer()" title="Reset">
+                    <span class="material-symbols-outlined">restart_alt</span>
+                </div>
+            </div>
+
+            <div id="records">
+                <table id="recTable">
+                    <tbody id="recData">
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Laps</th>
+                            <th>Time</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            
+        </div>
+    </body>
+</html>
