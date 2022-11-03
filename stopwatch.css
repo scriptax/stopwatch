@@ -1,9 +1,8 @@
 #SW{
     background-color: rgb(30, 37, 37);
     width: 800px;
-    height: 610px;
-    position: absolute;
-    left: 20%;
+    height: 600px;
+    margin: 0 auto 0;
     border-radius: 5px;
 }
 #disp{
