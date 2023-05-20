@@ -9,7 +9,7 @@ var msecDisp = document.getElementById("msec");
 var secDisp = document.getElementById("sec");
 var minDisp = document.getElementById("min");
 var hrDisp = document.getElementById("hr");
-var playBtn = document.getElementsByClassName("material-symbols-outlined")[0];
+var playBtn = document.getElementsByClassName("material-symbols-rounded")[0];
 
 var lapCount = 0;
 var initTimestamp = new Date(1599507000000);
